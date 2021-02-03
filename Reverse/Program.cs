@@ -22,7 +22,7 @@ namespace Reverse
                     Console.Write(singleLetter);
                 
                 }
-                    // Palindrome test for string
+                    // Palindrome test for string 
 
 
 
