@@ -9,7 +9,6 @@ namespace Reverse
             int length;
             string reverseCharacters = "";
 
-
             //Initial String
             Console.WriteLine("Please Enter a String");
             string characters = Console.ReadLine();
@@ -21,13 +20,10 @@ namespace Reverse
                 char singleLetter = characters[i];
                 Console.Write(singleLetter);
                 reverseCharacters += characters[i];
-               
             }
             Console.Write("");
-            
 
             //Check statement and reverse statement are equal
-            
             if (characters.Equals(reverseCharacters, StringComparison.OrdinalIgnoreCase))
             {
                 Console.WriteLine();
