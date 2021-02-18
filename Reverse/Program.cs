@@ -7,6 +7,7 @@ namespace Reverse
         static void Main(string[] args)
         {
             int length;
+            string reverseCharacters = "";
 
 
             //Initial String
@@ -19,14 +20,23 @@ namespace Reverse
             {
                 char singleLetter = characters[i];
                 Console.Write(singleLetter);
+                reverseCharacters += characters[i];
+               
             }
             Console.Write("");
+            
 
             //Check statement and reverse statement are equal
-            for (int i = length - 1; i >= 0; i--)
+            
+            if (characters.Equals(reverseCharacters, StringComparison.OrdinalIgnoreCase))
             {
-                char[] arr = { characters[i] };
-                string reverse = new string(arr);
+                Console.WriteLine();
+                Console.Write(" Thats a palindrome");
+            }
+            else
+            {
+                Console.WriteLine("");
+                Console.Write("Thats not a palindrome");
             }
 
 
